@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaFacebook, FaInstagramSquare, FaLinkedin } from 'react-icons/fa'
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { Link } from 'react-router-dom'
 export default function Aboutus() {
   return (
@@ -56,8 +58,20 @@ export default function Aboutus() {
             </div>
           </div>
         </div>
+        <div className='flex items-center display-flex justify-center p-3 cursor-pointer'>
+          <FaFacebook className='mx-12 text-3xl'/>
+          <FaInstagramSquare className='mx-12 text-3xl'/>
+          <FaSquareXTwitter className='mx-12 text-3xl' />
+          <FaLinkedin className='mx-12 text-3xl'/>
+        </div>
+        
+        
       </div>
     </footer>
+        <div className='border border-black w-full '></div>
+          <div className='bg-blue-200 font-semibold text-medium px-8 p-4'>
+          Copyright @ 2024. All rights reserved.
+          </div>
     </div>
   )
 }
